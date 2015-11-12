@@ -5,11 +5,11 @@ Sass module for css only spinners.
 ## Markup
 
 ```html
-    <!-- Fading Dots Spinner -->
-    <div class="spinner-dots"></div>
+  <!-- Fading Dots Spinner -->
+  <div class="spinner-dots"></div>
 
-    <!-- Spinning Disc -->
-    <div class="spinner-disc"></div>
+  <!-- Spinning Disc -->
+  <div class="spinner-disc"></div>
 ```
 
 ## Author
