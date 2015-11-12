@@ -1,0 +1,21 @@
+{
+  "name": "spinners",
+  "version": "0.0.1",
+  "description": "Sass module for css only spinners.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rightscale-design/spinners.git"
+  },
+  "author": {
+    "name": "Jason Melgoza",
+    "email": "jason@rightscale.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rightscale-design/spinners/issues"
+  },
+  "homepage": "https://github.com/rightscale-design/spinners#readme",
+  "dependencies": {
+    "bourbon": "^4.2.6"
+  }
+}
