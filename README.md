@@ -5,7 +5,7 @@ Sass module for css only spinners.
 ## Install
 
 ```bash
-git clone git@github.com:rightscale-design/designkit-spinners.git
+npm i designkit-spinners
 ```
 
 ## Markup
