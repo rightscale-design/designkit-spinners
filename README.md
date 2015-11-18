@@ -1,11 +1,11 @@
-# Spinners
+# Designkit Spinners
 
 Sass module for css only spinners.
 
 ## Install
 
 ```bash
-git clone git@github.com:rightscale-design/spinners.git
+git clone git@github.com:rightscale-design/designkit-spinners.git
 ```
 
 ## Markup

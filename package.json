@@ -1,10 +1,10 @@
 {
-  "name": "spinners",
+  "name": "designkit-spinners",
   "version": "0.0.1",
   "description": "Sass module for css only spinners.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rightscale-design/spinners.git"
+    "url": "git+https://github.com/rightscale-design/designkit-spinners.git"
   },
   "author": {
     "name": "Jason Melgoza",
@@ -12,9 +12,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rightscale-design/spinners/issues"
+    "url": "https://github.com/rightscale-design/designkit-spinners/issues"
   },
-  "homepage": "https://github.com/rightscale-design/spinners#readme",
+  "homepage": "https://github.com/rightscale-design/designkit-spinners#readme",
   "dependencies": {
     "bourbon": "^4.2.6"
   },

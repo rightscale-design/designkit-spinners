@@ -1,1 +1,1 @@
-node-sass --output-style expanded --include-path scss index.scss spinners.css
+node-sass --output-style expanded --include-path scss index.scss designkit-spinners.css
