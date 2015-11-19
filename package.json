@@ -19,12 +19,14 @@
     "bourbon": "^4.2.6"
   },
   "devDependencies": {
+    "http-server": "^0.8.5",
     "node-sass": "^3.4.2",
     "nodemon": "^1.8.1"
   },
   "scripts": {
     "build-css": "./bin/build-css",
     "build-min": "./bin/build-min",
-    "watch-css": "./bin/watch-css"
+    "watch-css": "./bin/watch-css",
+    "serve": "./bin/http-server"
   }
 }
