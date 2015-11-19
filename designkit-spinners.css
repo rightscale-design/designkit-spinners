@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /*
+//
+// Designkit-Spinners
+// --------------------------------------------------
+/*
+
+/*
 
 1. Keyframes
 ├── 1.0 Disc rotate keyframe animation
@@ -18,6 +24,11 @@
 └── 3.4 Dots last dot
 
 */
+/*
+// 1. Keyframes
+// --------------------
+*/
+/* 1.0 Disc rotate keyframe animation */
 @-webkit-keyframes spinner-disc-rotate {
   0% {
     -webkit-transform: rotateZ(-360deg);
@@ -53,6 +64,7 @@
   }
 }
 
+/* 1.1 Dots opacity keyframe animation */
 @-webkit-keyframes spinner-dots-fade {
   0%,
   80%,
@@ -86,6 +98,11 @@
   }
 }
 
+/*
+// 2. Disc
+// --------------------
+*/
+/* 2.0 Disc base */
 .spinner-disc {
   display: block;
   width: 10px;
@@ -109,17 +126,24 @@
   animation: spinner-disc-rotate 0.6s linear infinite;
 }
 
+/* 2.1 Disc size options */
 .spinner-disc.spinner-disc-sm:after {
   width: 10px;
   height: 10px;
 }
 
+/* 2.2 Disc position (override to meet your design) */
 .spinner-disc {
   position: absolute;
   top: calc(50% - 11px);
   left: calc(50% - 11px);
 }
 
+/*
+// 3. Dots
+// --------------------
+ */
+/* 3.0 Dots base  */
 .spinner-dots,
 .spinner-dots:before,
 .spinner-dots:after {
@@ -136,6 +160,9 @@
 }
 
 .spinner-dots {
+  /* 3.1 Dots position */
+  /*  3.2 Dots first dot */
+  /*  3.3 Dots middle dot  */
   -webkit-animation-delay: -0.16s;
   -moz-animation-delay: -0.16s;
   animation-delay: -0.16s;
@@ -144,6 +171,7 @@
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
+  /*  3.4 Dots last dot  */
 }
 
 .spinner-dots:before, .spinner-dots:after {
@@ -163,6 +191,7 @@
   left: 24px;
 }
 
+/*  3.1 Dots position (override to meet your design)  */
 .spinner-dots {
   position: absolute;
   top: calc(50% - 8px);

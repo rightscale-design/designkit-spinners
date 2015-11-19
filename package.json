@@ -1,6 +1,6 @@
 {
   "name": "designkit-spinners",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Sass module for css only spinners.",
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "scripts": {
     "build-css": "./bin/build-css",
+    "build-min": "./bin/build-min",
     "watch-css": "./bin/watch-css"
   }
 }
