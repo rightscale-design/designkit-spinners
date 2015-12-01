@@ -15,10 +15,8 @@
     "url": "https://github.com/rightscale-design/designkit-spinners/issues"
   },
   "homepage": "https://github.com/rightscale-design/designkit-spinners#readme",
-  "dependencies": {
-    "bourbon": "^4.2.6"
-  },
   "devDependencies": {
+    "bourbon": "^4.2.6",
     "http-server": "^0.8.5",
     "node-sass": "^3.4.2",
     "nodemon": "^1.8.1"
