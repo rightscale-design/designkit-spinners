@@ -1,37 +1,6 @@
 @charset "UTF-8";
 
-/*
-//
-// Designkit-Spinners
-// --------------------------------------------------
-*/
-
-/*
-
-1. Keyframes
-├── 1.0 Disc rotate keyframe animation
-└── 1.1 Dots opacity keyframe animation
-
-2. Disc
-├── 2.0 Disc base
-├── 2.1 Disc size options
-└── 2.2 Disc position (override to meet your design)
-
-3. Dots
-├── 3.0 Dots base
-├── 3.1 Dots position
-├── 3.2 Dots first dot
-├── 3.3 Dots middle dot
-└── 3.4 Dots last dot
-
-*/
-
-/*
-// 1. Keyframes
-// --------------------
-*/
-
-/* 1.0 Disc rotate keyframe animation */
+/* Disc rotate keyframe animation */
 @include keyframes(spinner-disc-rotate) {
   0% {
     @include transform(rotateZ(-360deg));
@@ -41,7 +10,7 @@
   }
 }
 
-/* 1.1 Dots opacity keyframe animation */
+/* Dots opacity keyframe animation */
 @include keyframes(spinner-dots-fade) {
   0%,
   80%,
@@ -54,12 +23,7 @@
   }
 }
 
-/*
-// 2. Disc
-// --------------------
-*/
-
-/* 2.0 Disc base */
+/* Disc base */
 .spinner-disc {
   display: block;
   width: 10px;
@@ -80,7 +44,7 @@
   }
 }
 
-/* 2.1 Disc size options */
+/* Disc size options */
 .spinner-disc.spinner-disc-sm {
   &:after {
     width: 10px;
@@ -88,19 +52,14 @@
   }
 }
 
-/* 2.2 Disc position (override to meet your design) */
+/* Disc position (override to meet your design) */
 .spinner-disc {
   position: absolute;
   top: calc(50% - 11px);
   left: calc(50% - 11px);
 }
 
-/*
-// 3. Dots
-// --------------------
- */
-
-/* 3.0 Dots base  */
+/* Dots base  */
 .spinner-dots,
 .spinner-dots:before,
 .spinner-dots:after {
@@ -114,7 +73,7 @@
 
 .spinner-dots {
 
- /* 3.1 Dots position */
+ /* Dots position */
   &:before,
   &:after {
     position: absolute;
@@ -122,24 +81,24 @@
     content: '';
   }
 
-   /*  3.2 Dots first dot */
+   /* Dots first dot */
   &:before {
     left: -24px;
     @include animation-delay(-0.32s);
   }
 
-   /*  3.3 Dots middle dot  */
+   /* Dots middle dot  */
   @include animation-delay(-0.16s);
   @include transform(translateZ(0));
 
-   /*  3.4 Dots last dot  */
+   /* Dots last dot  */
   &:after {
     left: 24px;
   }
 
 }
 
- /*  3.1 Dots position (override to meet your design)  */
+ /* Dots position (override to meet your design)  */
 .spinner-dots {
   position: absolute;
   top: calc(50% - 8px);
