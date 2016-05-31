@@ -1,6 +1,6 @@
 {
   "name": "designkit-spinners",
-  "version": "0.0.11",
+  "version": "0.1.0",
   "description": "Sass module for css spinners at RightScale.",
   "repository": {
     "type": "git",
