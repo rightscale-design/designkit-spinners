@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Disc rotate keyframe animation */
+// Disc rotate keyframe animation
 @include keyframes(spinner-disc-rotate) {
   0% {
     @include transform(rotateZ(-360deg));
@@ -10,7 +10,7 @@
   }
 }
 
-/* Dots opacity keyframe animation */
+// Dots opacity keyframe animation
 @include keyframes(spinner-dots-fade) {
   0%,
   80%,
@@ -23,7 +23,7 @@
   }
 }
 
-/* Disc base */
+// Disc base
 .spinner-disc {
   display: block;
   width: 10px;
@@ -33,33 +33,58 @@
     display: block;
     width: 20px;
     height: 20px;
-    border-radius: 100%;
-    border-top: 1px solid #000;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border-left: 1px solid #000;
     content: '';
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #000;
+    border-right-color: #ddd;
+    border-bottom-color: #ddd;
+    border-left-color: #000;
+    border-radius: 100%;
     opacity: .5;
-    @include animation(spinner-disc-rotate 0.6s linear infinite);
+
+    @include animation(spinner-disc-rotate .6s linear infinite);
   }
 }
 
-/* Disc size options */
-.spinner-disc.spinner-disc-sm {
-  &:after {
-    width: 10px;
-    height: 10px;
+// Disc size options
+.spinner-disc {
+  &.spinner-disc-sm {
+    &:after {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &.spinner-disc-md {
+    &:after {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 
-/* Disc position (override to meet your design) */
+// Disc thickness options
+.spinner-disc {
+  &.spinner-disc-thick {
+    &:after {
+      border-width: 2px;
+    }
+  }
+  &.spinner-disc-thicker {
+    &:after {
+      border-width: 3px;
+    }
+  }
+}
+
+// Disc position (override to meet your design)
 .spinner-disc {
   position: absolute;
   top: calc(50% - 11px);
   left: calc(50% - 11px);
 }
 
-/* Dots base  */
+// Dots base
 .spinner-dots,
 .spinner-dots:before,
 .spinner-dots:after {
@@ -67,13 +92,16 @@
   height: 16px;
   background-color: #000;
   border-radius: 50%;
+
   @include animation(spinner-dots-fade 1s infinite ease-in-out);
   @include animation-fill-mode(both);
 }
 
 .spinner-dots {
-
- /* Dots position */
+  // Dots middle dot
+  @include animation-delay(-.16s);
+  @include transform(translateZ(0));
+  // Dots position
   &:before,
   &:after {
     position: absolute;
@@ -81,24 +109,20 @@
     content: '';
   }
 
-   /* Dots first dot */
+  // Dots first dot
   &:before {
     left: -24px;
-    @include animation-delay(-0.32s);
+
+    @include animation-delay(-.32s);
   }
 
-   /* Dots middle dot  */
-  @include animation-delay(-0.16s);
-  @include transform(translateZ(0));
-
-   /* Dots last dot  */
+  // Dots last dot
   &:after {
     left: 24px;
   }
-
 }
 
- /* Dots position (override to meet your design)  */
+ // Dots position (override to meet your design)
 .spinner-dots {
   position: absolute;
   top: calc(50% - 8px);
