@@ -27,6 +27,8 @@ npm i designkit-spinners
 <div class="spinner-disc spinner-disc-thicker"></div>
 ```
 
+## CSS
+
 ```css
 /*
 //
