@@ -1,36 +1,60 @@
 {
   "name": "designkit-spinners",
-  "version": "0.1.0",
-  "description": "Sass module for css spinners at RightScale.",
+  "version": "1.0.0",
+  "description": "A Sass module for spinners used in RightScale apps.",
+  "homepage": "https://github.com/rightscale-design/designkit-spinners#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rightscale-design/designkit-spinners.git"
   },
   "author": {
-    "name": "Jason Melgoza",
-    "email": "jason@rightscale.com"
+    "name": "Jason Melgoza"
+  },
+  "license": "MIT",
+  "keywords": [
+    "sass",
+    "css",
+    "styles"
+  ],
+  "bugs": {
+    "url": "https://github.com/rightscale-design/designkit-spinners/issues"
   },
   "files": [
-    "src",
-    "css"
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "dist/designkit-spinners.css",
+    "dist/designkit-spinners.min.css",
+    "src/_designkit-spinners.scss",
+    "src/index.scss"
   ],
-  "keywords": [
-    "css",
-    "Sass"
+  "scss": "src/_designkit-spinners.scss",
+  "main": "dist/designkit-spinners.min.css",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
   ],
-  "license": "MIT",
-  "homepage": "https://github.com/rightscale-design/designkit-spinners#readme",
   "devDependencies": {
-    "bourbon": "^4.2.6",
-    "designkit-colors": "0.0.6",
-    "http-server": "^0.8.5",
-    "node-sass": "^3.4.2",
-    "nodemon": "^1.8.1"
+    "autoprefixer": "^6.4.0",
+    "csso": "^3.1.1",
+    "designkit-colors": "^1.0.0",
+    "lodash": "^4.17.5",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.10.0",
+    "npm-run-all": "^2.3.0",
+    "serve": "^6.0.6"
   },
   "scripts": {
-    "build-css": "./bin/build-css",
-    "build-min": "./bin/build-min",
-    "watch-css": "./bin/watch-css",
-    "serve": "./bin/http-server"
+    "start": "npm run build:serve",
+    "serve": "serve docs/ -o",
+    "watch": "nodemon -e scss -x 'npm run build:all'",
+    "build:scss": "node ./scripts/scss.js",
+    "build:prefix": "node ./scripts/postcss.js",
+    "build:minify": "node ./scripts/minify.js",
+    "build:docs": "node ./scripts/docs.js",
+    "build:readme": "node ./scripts/readme.js",
+    "build:all": "npm run build:scss && npm run build:prefix && npm run build:minify && npm run build:docs",
+    "build:serve": "run-p watch serve"
   }
 }
