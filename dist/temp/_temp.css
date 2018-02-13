@@ -1,46 +1,9 @@
-# designkit-spinners
-1.0.0
-
-A Sass module for spinners used in RightScale apps.
-
-## Install
-```
-npm i --save designkit-spinners
-```
-
-## CSS
-
-```css
-@-webkit-keyframes spinner-disc-rotate {
-  0% {
-    -webkit-transform: rotateZ(-360deg);
-            transform: rotateZ(-360deg);
-  }
-  100% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-}
-
 @keyframes spinner-disc-rotate {
   0% {
-    -webkit-transform: rotateZ(-360deg);
-            transform: rotateZ(-360deg);
+    transform: rotateZ(-360deg);
   }
   100% {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-}
-
-@-webkit-keyframes spinner-dots-fade {
-  0%,
-  80%,
-  100% {
-    opacity: 1;
-  }
-  40% {
-    opacity: .2;
+    transform: rotateZ(0deg);
   }
 }
 
@@ -75,8 +38,7 @@ npm i --save designkit-spinners
   border-left-color: #000;
   border-radius: 100%;
   opacity: .5;
-  -webkit-animation: spinner-disc-rotate .6s linear infinite;
-          animation: spinner-disc-rotate .6s linear infinite;
+  animation: spinner-disc-rotate .6s linear infinite;
 }
 
 .spinner-disc.spinner-disc-sm:after {
@@ -110,17 +72,13 @@ npm i --save designkit-spinners
   height: 16px;
   background-color: #000;
   border-radius: 50%;
-  -webkit-animation: spinner-dots-fade 1s infinite ease-in-out;
-          animation: spinner-dots-fade 1s infinite ease-in-out;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: spinner-dots-fade 1s infinite ease-in-out;
+  animation-fill-mode: both;
 }
 
 .spinner-dots {
-  -webkit-animation-delay: -.16s;
-          animation-delay: -.16s;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  animation-delay: -.16s;
+  transform: translateZ(0);
 }
 
 .spinner-dots:before, .spinner-dots:after {
@@ -131,8 +89,7 @@ npm i --save designkit-spinners
 
 .spinner-dots:before {
   left: -24px;
-  -webkit-animation-delay: -.32s;
-          animation-delay: -.32s;
+  animation-delay: -.32s;
 }
 
 .spinner-dots:after {
@@ -144,13 +101,3 @@ npm i --save designkit-spinners
   top: calc(50% - 8px);
   left: calc(50% - 8px);
 }
-
-```
-
-## Author
-
-Jason Melgoza
-
-## License
-
-MIT

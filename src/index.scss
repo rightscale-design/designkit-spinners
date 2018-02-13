@@ -1,10 +1,8 @@
-@charset "UTF-8";
-
-/*
 //
-// Designkit-Spinners
+// Designkit Sample
 // --------------------------------------------------
-*/
 
-@import "bourbon";
-@import "src/designkit-spinners";
+@import
+  "designkit-colors",
+  "designkit-spinners"
+;
