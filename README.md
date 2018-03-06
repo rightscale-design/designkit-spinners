@@ -189,18 +189,18 @@ npm i --save designkit-spinners
   left: calc(50% - 8px);
 }
 
-.loading-fill {
+.loading-pane {
   height: 100%;
 }
 
-.loading-fill .loading-message {
+.loading-message {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 13px;
   line-height: 1.615;
   color: #76899a;
 }
 
-.loading-fill .cloud-wrapper {
+.loading-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +217,7 @@ npm i --save designkit-spinners
           justify-content: center;
 }
 
-.loading-fill .cloud-spinner-wrapper {
+.cloud-spinner {
   position: relative;
   display: block;
   width: 60px;
@@ -225,7 +225,7 @@ npm i --save designkit-spinners
   overflow: hidden;
 }
 
-.loading-fill .cloud-spinner-mask {
+.cloud-spinner .cloud-spinner-mask {
   position: absolute;
   top: 0;
   z-index: 2;
@@ -237,7 +237,7 @@ npm i --save designkit-spinners
   background-size: 60px;
 }
 
-.loading-fill .cloud-spinner-cogs {
+.cloud-spinner .cloud-spinner-cogs {
   position: absolute;
   z-index: 1;
   height: 6rem;
@@ -245,7 +245,7 @@ npm i --save designkit-spinners
   margin-left: -5px;
 }
 
-.loading-fill .cloud-spinner-cog {
+.cloud-spinner .cloud-spinner-cog {
   position: absolute;
   z-index: -1;
   width: 30px;
@@ -260,7 +260,7 @@ npm i --save designkit-spinners
           animation-timing-function: linear;
 }
 
-.loading-fill .cloud-spinner-cog:first-child {
+.cloud-spinner .cloud-spinner-cog:first-child {
   top: 17px;
   left: 4px;
   opacity: .8;
@@ -268,7 +268,7 @@ npm i --save designkit-spinners
           animation-name: rotate;
 }
 
-.loading-fill .cloud-spinner-cog:nth-child(2) {
+.cloud-spinner .cloud-spinner-cog:nth-child(2) {
   -webkit-animation-name: reverse-rotate;
           animation-name: reverse-rotate;
   top: 23px;
@@ -276,7 +276,7 @@ npm i --save designkit-spinners
   opacity: .5;
 }
 
-.loading-fill .cloud-spinner-cog:nth-child(3) {
+.cloud-spinner .cloud-spinner-cog:nth-child(3) {
   top: -5px;
   left: 26px;
   opacity: .3;

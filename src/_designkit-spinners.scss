@@ -145,28 +145,28 @@
 }
 
 // Cloud spinner
-.loading-fill {
+.loading-pane {
   height: 100%;
-  .loading-message {
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 13px;
-    line-height: 1.615;
-    color: #76899a;
-  }
-  .cloud-wrapper {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .cloud-spinner-wrapper {
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 40px;
-    overflow: hidden;
-  }
+}
+.loading-message {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.615;
+  color: #76899a;
+}
+.loading-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cloud-spinner {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 40px;
+  overflow: hidden;
   .cloud-spinner-mask {
     position: absolute;
     top: 0;
