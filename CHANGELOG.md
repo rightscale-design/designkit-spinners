@@ -1,3 +1,6 @@
+# v1.0.2
+* Added alternative mask
+
 # v1.0.1
 * Added CAUI cloud spinner
 
