@@ -1,6 +1,6 @@
 {
   "name": "designkit-spinners",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Sass module for spinners used in RightScale apps.",
   "homepage": "https://github.com/rightscale-design/designkit-spinners#readme",
   "repository": {
@@ -54,7 +54,7 @@
     "build:minify": "node ./scripts/minify.js",
     "build:docs": "node ./scripts/docs.js",
     "build:readme": "node ./scripts/readme.js",
-    "build:all": "npm run build:scss && npm run build:prefix && npm run build:minify && npm run build:docs && npm run build:readme",
+    "build:all": "npm run build:scss && npm run build:prefix && npm run build:minify && npm run build:docs",
     "build:serve": "run-p watch serve"
   }
 }
